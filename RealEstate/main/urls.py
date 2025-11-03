@@ -5,5 +5,6 @@ from django.urls import path
 app_name = "main"
 
 urlpatterns = [ 
-    path("",views.home_view, name="home_view")
+    path("",views.home_view, name="home_view"),
+    path("properties/", views.properties_view, name="properties_view")
 ]

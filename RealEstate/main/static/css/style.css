@@ -7,7 +7,6 @@
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;    
-
 }
 header
 {
@@ -34,6 +33,11 @@ a
 {
     font-size: xx-large;
     font-weight: 500;
+}
+
+.home-logo a:hover
+{
+    color: red;
 }
 
 header nav ul
@@ -156,36 +160,176 @@ section a
 .part-content
 {
     width: 100%;
-    height: 80px;
     display: flex;
+    /* margin-bottom: 0px; */
     align-items: center;
     justify-content: center;
-    background-color: rgb(201, 201, 201);
+    background: rgb(225, 224, 224);
+    padding-bottom: 70px;
     /* Here will edit if we want the item over-up */
 }
 
 .part-content ul
 {
-    height: 150px;
+    position: fixed;
+    width: fit-content;
+    height: 70px;
     border-radius: 50px;
     background-color: #fff;
-    gap: 20px;
+    gap: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 90px;
+    padding-right: 90px;
+    margin-bottom: 0px;
 }
 
 .part-content ul li
 {
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
-.test2
+.part-content ul li .icon
 {
-    height: 100vh;
-    color: blue;
-    background-image: url('/static/images/skyscraper-dark.jpg');
-    background-size: cover;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.part-content ul li:nth-child(1)
+{
+    color: #2fe82f;
+}
+
+.part-content ul li:nth-child(1) .icon
+{
+    background-color: #b5fbb5;
+}
+
+.part-content ul li:nth-child(2)
+{
+    color: #d69533;
+}
+
+.part-content ul li:nth-child(2) .icon
+{
+    background-color: #ECDEC9;
+}
+
+.part-content ul li:nth-child(3)
+{
+    color: #eb51fc;
+}
+
+.part-content ul li:nth-child(3) .icon
+{
+    background-color: #FBD8FF;;
+}
+
+.part-content ul li:nth-child(4)
+{
+       color: #242478;
+}
+
+.part-content ul li:nth-child(4) .icon
+{
+    background-color: #E6E6FA;
+}
+
+.properties-content
+{
+    width: 100%;
+    height: fit-content;
+    padding-left: 220px;
+    margin-top: 150px;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.properties-content .properties-title
+{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+.properties-content .our-properities
+{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 320px 320px 320px;
+}
+
+.properties-content .our-properities .card
+{
+    width: 320px;
+    height: 320px;
+    display: flex;
+    border-radius: 30px;
+    align-items:baseline;
+    justify-content: start;
+    flex-direction: column;
+    background-color: rgb(215, 213, 213);
+}
+
+.properties-content .our-properities .card .image
+{
+    width: 320px;
+    height: 270px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background-size:cover;
     background-repeat: no-repeat;
+}
+
+.properties-content .our-properities .card .title
+{
+    height: 80px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex-direction: column;
+
+    padding-top: 30px;
+}
+.properties-content .our-properities .card .title h3
+{
+    padding-left: 20px;
+    width: 300px;
+    font-size: medium;
+    text-align: left;
+}
+.properties-content .our-properities .card .title .btn
+{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    width: 300px;
+}
+.properties-content .our-properities .card .title .btn a
+{
+    color: #fff;
+    text-align: center;
+    width: fit-content;
+
+    margin-top: 7px;
+
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    border-radius: 30px;
+    font-size: small;
+    background-color: #000;
+
 }
