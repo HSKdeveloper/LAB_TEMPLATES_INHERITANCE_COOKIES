@@ -40,7 +40,10 @@ a
     color: black;
     text-decoration: none;
 }
-
+html.dark a
+{
+    color: #fff;
+}
 .home-logo a
 {
     font-size: 2rem;
@@ -71,7 +74,10 @@ header nav ul
     border-radius: 50px;
 }
 
-
+html.dark header nav ul
+{
+    background-color: #000;
+}
 header nav ul li a:hover
 {
     color: red;
@@ -116,24 +122,7 @@ header nav ul li a:hover
     font-size: 1.2rem;
     padding: 0.4rem;
 }
-/* --
-.setting .light-dark .light-icon
-{
-    
-    background-color: #fff;
-    border-radius: 50%;
-    color: #000;
-    
-}
-
-.setting .light-dark .dark-icon
-{
-    background-color: #fff;
-    border-radius: 50%;
-    color: #000;
-}
---*/
-.setting .light-dark .light-mode, .setting .light-dark .dark-mode
+.light-dark .light-mode
 {
     margin: 7px;
     background-color: #fff;
@@ -141,6 +130,12 @@ header nav ul li a:hover
     color: #000;
 }
 
+.light-dark .dark-mode
+{
+    color: #fff;
+    background-color: #000;
+    border-radius: 50%;
+}
 /* ---- */
 main
 {
@@ -207,7 +202,10 @@ section a
     padding-bottom: 70px;
     /* Here will edit if we want the item over-up */
 }
-
+html.dark .part-content
+{
+    background-color: #343434;
+}
 .part-content ul
 {
     position: fixed;
@@ -225,6 +223,11 @@ section a
     padding-left: 90px;
     padding-right: 90px;
     margin-bottom: 0px;
+}
+
+html.dark .part-content ul
+{
+    background-color: #000;
 }
 
 .part-content ul li
@@ -248,7 +251,7 @@ section a
 
 .part-content ul li:nth-child(1) .icon
 {
-    background-color: #b5fbb5;
+    background-color: #a1fba1;
 }
 
 .part-content ul li:nth-child(2)

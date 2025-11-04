@@ -5,22 +5,17 @@
     Home
 {% endblock %}
 
-
-<!--
-    {% block style_head %}
-        <style>
-            html.dark main
-            {     
-                background-image: url("/static/images/skyscraper-dark.jpg");
-            }
-        </style>
-    {% endblock %}
--->
-
-
-
-
-
+{% block style_head %}
+<style>
+    html.dark main
+    {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: gray;
+        background-image: url('/static/images/skyscraper-dark.jpg');
+    }
+</style>
+{% endblock %}
 
 {% block content %}
 
